@@ -12,19 +12,21 @@ Move the file to your behaviors folder.
 
 ## Tutorial
 
-In your model's $actsAs variable add the following:
+In your model's `$actsAs` variable add the following:
 
     'ContinuousId' => array(
-      'field' => 'aiid', // your field name
+      'field' => 'aiid',
       'conditions' => array(
         'deleted' => array(0, 1)
       ),
       'offset' => '1
     ),
 
-The conditions are optional and specify which rows to find to determine the value of the next row.
+The `field` is the name of the field that should be incremented.
 
-The offset is where the behavior should start counting.
+The `conditions` are optional and specify which rows to find to determine the value of the next row.
+
+The `offset` is where the behavior should start counting.
 
 
 #Changelog
