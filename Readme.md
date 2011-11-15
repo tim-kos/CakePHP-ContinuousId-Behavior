@@ -14,13 +14,13 @@ Move the file to your behaviors folder.
 
 In your model's $actsAs variable add the following:
 
-'ContinuousId' => array(
-  'field' => 'aiid', // your field name
-  'conditions' => array(
-    'deleted' => array(0, 1)
-  ),
-  'offset' => '1
-),
+    'ContinuousId' => array(
+      'field' => 'aiid', // your field name
+      'conditions' => array(
+        'deleted' => array(0, 1)
+      ),
+      'offset' => '1
+    ),
 
 The conditions are optional and specify which rows to find to determine the value of the next row.
 
